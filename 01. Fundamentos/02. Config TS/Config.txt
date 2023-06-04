@@ -1,0 +1,12 @@
+O TS pode ser configurado de diversas maneiras personalizadas,
+  como por exemplo para ativar o uso de decorators, ou para
+  alterar o local de saída dos arquivos transpilados.
+
+Para criar o arquivo de configuração, basta executar o comando:
+  tsc --init
+
+O arquivo de configuração é o tsconfig.json
+
+
+O comando "tsc -w" pode ser usado para ficar escutando as alterações nos arquivos
+  e não ser necessário rodar o "tsc script.ts" a cada alteração.
