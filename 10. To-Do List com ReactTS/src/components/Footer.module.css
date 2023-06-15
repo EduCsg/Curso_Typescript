@@ -1,0 +1,33 @@
+.footer {
+	height: 200px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+
+	background-color: #282c34;
+	color: #fff;
+}
+
+.footer span {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #61dafb;
+}
+
+.footer p {
+	font-size: 1.2em;
+}
+
+.footer p a {
+	color: #61dafb;
+	text-decoration: none;
+	border-bottom: 2px solid #61dafb;
+}
+
+.footer p a:hover {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
