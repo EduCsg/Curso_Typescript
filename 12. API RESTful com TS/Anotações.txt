@@ -1,0 +1,162 @@
+Iniciando o projeto!
+
+Primeiros comandos
+
+->  npm init -y       -> inicia o projeto
+->  tsc --init        -> cria o arquivo de configuração do typescript
+
+
+
+Dependências de projeto
+
+->  npm i config dotenv express express-validator mongoose morgan winston
+
+- express               -> framework para criação de rotas
+- express-validator     -> validação de dados
+- mongoose              -> ORM para o mongoDB
+- morgan                -> log de requisições
+- winston               -> log de erros
+
+
+
+Dependências de desenvolvimento
+
+->  npm i @types/config @types/express @types/mongoose @types/morgan @types/node ts-node-dev typescript --save-dev
+
+- @types/config         -> tipagem do config
+- @types/express        -> tipagem do express
+- @types/mongoose       -> tipagem do mongoose
+- @types/morgan         -> tipagem do morgan
+- @types/node           -> tipagem do node
+- ts-node-dev           -> executa o typescript em tempo de desenvolvimento
+- typescript            -> tipagem do typescript
+
+
+
+Criar projeto 
+
+-> Criar pasta /src e o root do projeto, app.ts
+
+
+
+Rodar projeto
+
+-> criar script dentro do package.json
+-> "dev": "ts-node-dev --respawn --transpile-only ./src/app.ts"
+
+- ts-node-dev           -> executa o typescript em tempo de desenvolvimento
+- --respawn             -> reinicia o servidor quando houver alteração
+- --transpile-only      -> não verifica erros de tipagem
+- ./src/app.ts          -> arquivo root do projeto
+
+Após isso, basta rodar o comando npm run dev e será executado o arquivo app.ts
+
+
+
+Iniciando Express
+
+-> importar express e o config (vem do @types/express) dentro do app.ts
+
+-> criar o servidor
+    -> const app = express();
+
+-> aceitar os requests com json
+    -> app.use(express.json());
+
+-> iniciar na porta 3000
+    -> app.listen(3000, async () => {  })
+
+
+
+Para definir a porta como uma variável global, usamos o config
+
+-> Criar pasta "Config" no projeto
+    -> Criar default.ts e adicionar:
+      -> export default {
+          port: 3000
+      }
+
+
+
+O arquivo router.ts armazena todas as rotas do projeto
+
+-> Criar pasta "Routes" no projeto
+    -> Criar router.ts e adicionar:
+      -> import { Router } from 'express';
+      -> const router = Router();
+      -> export default (rota)
+
+
+
+Criando o MongoDB
+
+-> Acessar mongoDB Atlas e criar um cluster
+    -> Criar um banco de dados
+    -> Liberar o acesso ao IP da máquina
+    -> Criar um usuário e senha
+
+Conectando ao MongoDB
+
+-> Acessar a aba de Connect no Atlas
+    -> Conectar com o MongoDB Drivers
+    -> Copiar a string de conexão
+    -> Criar arquivo "db.ts" na pasta "config"
+    -> Colar a string no arquivo default.ts como "dbUri"
+
+    -> Realizar a função de conexão no db.ts
+    -> Importar e executar a função de connect no app.ts
+
+
+
+Configurando DotEnv
+
+    -> Criar arquivo .env na root do projeto
+
+    -> Adicionar as variáveis de ambiente
+        -> Para usar com o VITE, é obrigatório que todos valores comecem com o prefixo VITE_nomeDaVariavel
+        -> ex: VITE_DB_USER, VITE_DB_PASSWORD, VITE_DB_URI, etc
+
+    -> Chamar as variáveis de ambiente no default.ts
+        -> process.env.VITE_DB_USER, process.env.VITE_DB_PASSWORD, etc
+
+    -> Importar o dotenv no app.ts
+        -> require('dotenv').config();
+
+
+
+Integrando o Winston
+
+    -> Winston é um logger utilizado em node, para logar erros e informações
+    -> Para configurar ele, criaremos o arquivo logger.ts dentro da pasta /config
+
+
+
+Integrando o Morgan 
+
+    -> Ele faz o log das requisições
+    -> Ele se trata de um middleware, pois ele intercepta as requisições e faz o log
+    -> Para configurar ele, criaremos o arquivo morganMiddleware.ts dentro da pasta /src/middleware
+
+
+
+Models
+
+    -> É uma pasta que armazena os modelos de dados do projeto (ex: usuário, produto, etc)
+    -> Serve de esqueleto para os dados que serão armazenados no banco de dados
+
+
+
+Controllers
+
+    -> São onde fica a lógica complexa do projeto
+    -> São responsáveis por receber as requisições, processar e enviar uma resposta
+    -> Geralmente, exporta-se apenas uma função por controller
+    -> Para associar um controller a uma rota, basta fazer o seguinte
+        -> app.get('/rota', controller)
+
+
+
+Express Validator (Middleware)
+
+    -> É um middleware que valida os dados recebidos nas requisições
+    -> Para configurar ele, criaremos o arquivo handleValidation.ts dentro da pasta /src/middleware

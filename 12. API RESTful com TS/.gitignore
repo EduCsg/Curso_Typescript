@@ -1,0 +1,5 @@
+# Recomendado utilizar o .env, porém, para não quebrar a aplicação e por ser um banco de dados
+# apenas para aprender, vou deixar exposto.
+
+# .env
+node_modules

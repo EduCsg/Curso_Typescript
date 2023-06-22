@@ -1,0 +1,35 @@
+2023-06-21 16:27:57:2757 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 16:27:57:2757 - [31merror[39m: [31mErro: Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.riyqqqqk54l.mongodb.net[39m
+2023-06-21 16:27:58:2758 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 16:27:58:2758 - [31merror[39m: [31mErro: Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.riyqqqqk54l.mongodb.net[39m
+2023-06-21 16:28:15:2815 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 16:28:15:2815 - [31merror[39m: [31mquerySrv ENOTFOUND _mongodb._tcp.cluster0.riyqqqqk54l.mongodb.net[39m
+2023-06-21 16:28:39:2839 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 16:28:39:2839 - [31merror[39m: [31mquerySrv ENOTFOUND _mongodb._tcp.cluster0.riyqqqqk54l.mongodb.net[39m
+2023-06-21 16:28:40:2840 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 16:28:40:2840 - [31merror[39m: [31mquerySrv ENOTFOUND _mongodb._tcp.cluster0.riyqqqqk54l.mongodb.net[39m
+2023-06-21 18:20:48:2048 - [31merror[39m: [31mTeste de erro[39m
+2023-06-21 23:10:43:1043 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 23:10:43:1043 - [31merror[39m: [31mbad auth : Authentication failed.[39m
+2023-06-21 23:12:31:1231 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 23:12:31:1231 - [31merror[39m: [31mquerySrv ENOTFOUND _mongodb._tcp.cluster0.rasdasdasdiyk54l.mongodb.net[39m
+2023-06-21 23:14:23:1423 - [31merror[39m: [31mNão foi possível conectar ao banco de dados![39m
+2023-06-21 23:14:23:1423 - [31merror[39m: [31mbad auth : Authentication failed.[39m
+2023-06-21 23:19:32:1932 - [31merror[39m: [31mAplicação rodando na porta 3000![39m
+2023-06-22 00:19:39:1939 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:20:42:2042 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:21:34:2134 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:21:37:2137 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:21:44:2144 - [31merror[39m: [31mID Inválido! Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:21:50:2150 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "15" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 00:23:29:2329 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "6493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba36493bd35333e8217e8c0dba3" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:44:13:4413 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:44:18:4418 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:44:35:4435 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:54:40:5440 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:55:02:552 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:55:36:5536 - [31merror[39m: [31mID Inválido: Cast to ObjectId failed for value "6493ee12569bf24b840a186" (type string) at path "_id" for model "Movie"[39m
+2023-06-22 03:55:40:5540 - [31merror[39m: [31mFilme não encontrado![39m
+2023-06-22 03:55:54:5554 - [31merror[39m: [31mFilme não encontrado![39m
+2023-06-22 03:58:17:5817 - [31merror[39m: [31mErro no sistema: movie.delete is not a function[39m
+2023-06-22 04:02:11:211 - [31merror[39m: [31mFilme não encontrado![39m
